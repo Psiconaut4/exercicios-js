@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>butaum</title>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    button{
+        background-color: blue;
+        height: 100px;
+        width: 200px;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+    button:active{
+        background-color: green;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <button id="btn">Olha eu AQUI</button>
+</body>
+<script>
+    const btn = document.getElementById('btn');
+    
+    btn.addEventListener('click', () => {
+        window.alert('Você clicou no botão!');
+    });
+</script>
+</html>
