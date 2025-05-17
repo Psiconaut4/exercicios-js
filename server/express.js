@@ -10,7 +10,7 @@ app.get("/aipapai", function(req,res){
 })
 
 app.get("/ola/:nome/:cargo/:tamanho", function(req,res){
-    res.send("ola "+req.params.nome+" do penis levemente "+"<h1>"+req.params.tamanho+"</h1>"+"<h2> seu cargo é "+req.params.cargo+"</h2>");
+    res.send("ola "+req.params.nome+"<h1>"+req.params.tamanho+"</h1>"+"<h2> seu cargo é "+req.params.cargo+"</h2>");
 })
 
 app.listen(8081, function(){
