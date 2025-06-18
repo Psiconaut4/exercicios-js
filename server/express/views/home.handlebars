@@ -1,0 +1,9 @@
+<button onclick="window.location.href='http://localhost:6069/cad'">Cadastrar</button>
+<h1>Lista de Posts</h1>
+{{#each posts}}
+    <small>{{createdAt}}</small>
+    <h2>{{titulo}}</h2>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
